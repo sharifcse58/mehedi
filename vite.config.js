@@ -11,5 +11,10 @@ export default defineConfig({
         hmr: {
             overlay: true, // Display errors as an overlay in the browser
         },
+        allowedHosts: [
+            "5174-sharifcse58-mehedi-pr838yd9g3f.ws-us117.gitpod.io"
+        ],
+        host: true, // Allows access via network
+        port: 5173, // Default Vite port
     },
 });
