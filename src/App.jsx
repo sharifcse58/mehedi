@@ -4,7 +4,9 @@ import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Blog from "./pages/Blog";
 import About from "./pages/About";
-import More from "./pages/More";
+import RecentBlogs from "./pages/RecentBlogs";
+import BlogDetails from "./pages/BlogDetails";
+
 import "./App.css";
 
 const App = () => {
@@ -19,12 +21,13 @@ const App = () => {
               element={
                 <>
                   <Home />
-                  <More />
+                  <RecentBlogs />
                 </>
               }
             />
             <Route path="/blog" element={<Blog />} />
             <Route path="/about" element={<About />} />
+            <Route path="/blog/:id" element={<BlogDetails />} />
           </Routes>
         </div>
         <Footer />

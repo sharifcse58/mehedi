@@ -1,6 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-const RecentPosts = () => {
+const RecentBlogs = () => {
   const posts = [
     {
       title: "RUST পর্ব ০২ - বেসিক সিনট্যাক্স",
@@ -24,7 +25,7 @@ const RecentPosts = () => {
   ];
 
   return (
-    <div className="bg-gray-100 text-gray-800 py-16 px-8">
+    <div id="more" className="bg-gray-100 text-gray-800 py-16 px-8">
       <h2 className="text-3xl font-bold text-center mb-12">Recent Posts</h2>
       <div className="space-y-12 max-w-4xl mx-auto">
         {posts.map((post, index) => (
@@ -40,15 +41,15 @@ const RecentPosts = () => {
         ))}
       </div>
       <div className="text-center mt-8">
-        <a
-          href="#"
+        <Link
+          to="/blog"
           className="text-teal-500 hover:text-teal-700 underline text-lg"
         >
           Read All Posts →
-        </a>
+        </Link>
       </div>
     </div>
   );
 };
 
-export default RecentPosts;
+export default RecentBlogs;
