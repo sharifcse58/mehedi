@@ -6,14 +6,14 @@ import Blog from "./pages/Blog";
 import About from "./pages/About";
 import RecentBlogs from "./pages/RecentBlogs";
 import BlogDetails from "./pages/BlogDetails";
-import { BrowserRouter } from "react-router-dom";
+import { HashRouter as Router } from "react-router-dom";
 
 import "./App.css";
 
 const App = () => {
   return (
     <div className="w-full min-h-screen bg-black text-white flex flex-col">
-      <BrowserRouter basename="/">
+      <Router>
         <Header />
         <div className="flex-grow">
           <Routes>
@@ -32,7 +32,7 @@ const App = () => {
           </Routes>
         </div>
         <Footer />
-      </BrowserRouter>
+      </Router>
     </div>
   );
 };
