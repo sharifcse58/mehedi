@@ -76,8 +76,7 @@ const About = () => {
             </li>
             <li>Spend time with my birds</li>
             <li>
-              I enjoy watching the islamic content and wondering about human
-              existence!
+              I enjoy watching the stars and wondering about human existence!
             </li>
           </ul>
         </section>
