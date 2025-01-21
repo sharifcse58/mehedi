@@ -13,7 +13,7 @@ import "./App.css";
 const App = () => {
   return (
     <div className="w-full min-h-screen bg-black text-white flex flex-col">
-      <BrowserRouter basename="/">
+      <BrowserRouter basename="/mehedi">
         <Header />
         <div className="flex-grow">
           <Routes>
