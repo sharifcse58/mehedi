@@ -25,7 +25,7 @@ const Blog = () => {
   };
 
   return (
-    <div className="bg-white text-gray-900 py-10 px-5">
+    <div className="bg-white text-gray-900 py-10 px-64">
       <div className="text-center mb-10">
         <h1 className="text-4xl font-bold">LATEST POSTS</h1>
         {filteredTag && (

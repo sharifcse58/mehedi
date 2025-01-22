@@ -10,10 +10,15 @@ import { HashRouter as Router } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
 
 import "./App.css";
+const isHome = window.location.pathname === "/";
 
 const App = () => {
   return (
-    <div className="w-full min-h-screen bg-black text-white flex flex-col">
+    <div
+      className={`w-full min-h-screen text-white flex flex-col ${
+        isHome ? "bg-black text-white" : "bg-white text-black"
+      }`}
+    >
       <Router>
         <Header />
         <div className="flex-grow">
