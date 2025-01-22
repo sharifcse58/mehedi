@@ -1,52 +1,9 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
-const RecentBlogs = () => {
-  const blogs = [
-    {
-      id: 1,
-      title: "RUST পর্ব ০২ - বেসিক সিনট্যাক্স",
-      date: "July 16, 2023",
-      readTime: "13 min read",
-      tags: ["RUST", "RUST-PROGRAMMING", "BANGLA"],
-      description:
-        "প্রতিটা প্রোগ্রামিং ল্যাঙ্গুয়েজের যে সকল বেসিক বিষয় থাকে...",
-    },
-    {
-      id: 2,
-      title: "RUST প্রোগ্রামিং পর্ব ০১ - কেন শিখবো RUST?",
-      date: "June 22, 2023",
-      readTime: "12 min read",
-      tags: ["RUST", "RUST-PROGRAMMING", "BANGLA"],
-      description: "Rust-এ কিছু গুরুত্বপূর্ণ বিষয় আলোচনা করা হয়েছে...",
-    },
-    {
-      id: 3,
-      title: "ANSIBLE LEARNING NOTES",
-      date: "April 1, 2023",
-      readTime: "12 min read",
-      tags: ["ANSIBLE", "BANGLA", "DEVOPS"],
-      description:
-        "Ansible একটি শক্তিশালী সার্ভার অটোমেশন টুল যা অল্প সময়ে অনেক কার্যকরী কাজ...",
-    },
-    {
-      id: 4,
-      title: "ReactJS Basics",
-      date: "May 5, 2023",
-      readTime: "10 min read",
-      tags: ["REACT", "JAVASCRIPT"],
-      description: "ReactJS-এর বেসিক বিষয় নিয়ে আলোচনা করা হয়েছে...",
-    },
-    {
-      id: 5,
-      title: "DevOps Best Practices",
-      date: "March 20, 2023",
-      readTime: "15 min read",
-      tags: ["DEVOPS", "PRACTICES"],
-      description: "DevOps এর বেস্ট প্রাকটিস নিয়ে আলোচনা করা হয়েছে...",
-    },
-  ];
+import blogs from "../blogs";
 
+const RecentBlogs = () => {
   const [filteredTag, setFilteredTag] = useState(null);
 
   // Filter blogs by selected tag
