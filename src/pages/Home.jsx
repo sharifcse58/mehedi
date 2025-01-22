@@ -3,7 +3,7 @@ import { Link as ScrollLink } from "react-scroll";
 
 const Home = () => {
   return (
-    <div className="h-screen flex items-center text-white container mx-auto px-6">
+    <div className="h-screen max-w-6xl mx-auto text-white px-8 flex justify-center items-center">
       <div className="gird grid-cols-1 sm:grid-cols-1 justify-items-start gap-4">
         <h1
           className="text-5xl md:text-7xl font-bold font-sans mb-4 animate-fade-in"

@@ -7,6 +7,7 @@ import About from "./pages/About";
 import RecentBlogs from "./pages/RecentBlogs";
 import BlogDetails from "./pages/BlogDetails";
 import { HashRouter as Router } from "react-router-dom";
+import ScrollToTop from "./components/ScrollToTop";
 
 import "./App.css";
 
@@ -16,6 +17,7 @@ const App = () => {
       <Router>
         <Header />
         <div className="flex-grow">
+          <ScrollToTop />
           <Routes>
             <Route
               path="/"
