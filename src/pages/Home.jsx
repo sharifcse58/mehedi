@@ -8,7 +8,7 @@ const Home = () => {
         <div className="relative">
           <div className="absolute inset-0 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-full blur-lg -z-10"></div>
           <img
-            src="/mehedi.jpg" // Replace this with your profile picture URL
+            src="mehedi.jpg"
             alt="Profile"
             className="w-40 h-40 md:w-52 md:h-52 rounded-full border-4 border-white shadow-xl shadow-blue-500/50 hover:scale-105 transition-transform duration-300 ease-in-out"
           />
@@ -28,7 +28,7 @@ const Home = () => {
             style={{ animationDuration: "2.5s" }}
           >
             I am a passionate developer with broad cross-domain expertise: API
-            Development, Web, DevOps, automation. I enjoy working with
+            Development, Web, Design, DevOps, automation. I enjoy working with
             passionate people in a team to build products and solutions that
             help a large number of people.
           </p>
